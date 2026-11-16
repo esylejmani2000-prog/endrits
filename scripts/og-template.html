@@ -1,0 +1,76 @@
+<!doctype html>
+<!--
+  Social preview card (1200×630). Regenerate public/og.png after editing:
+  chrome --headless --screenshot=public/og.png --window-size=1200,630 scripts/og-template.html
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      @font-face {
+        font-family: 'Newsreader';
+        src: url('../node_modules/@fontsource-variable/newsreader/files/newsreader-latin-wght-normal.woff2') format('woff2');
+        font-weight: 200 800;
+      }
+      @font-face {
+        font-family: 'Instrument Sans';
+        src: url('../node_modules/@fontsource-variable/instrument-sans/files/instrument-sans-latin-wght-normal.woff2') format('woff2');
+        font-weight: 400 700;
+      }
+      html,
+      body {
+        margin: 0;
+        width: 1200px;
+        height: 630px;
+      }
+      body {
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        box-sizing: border-box;
+        padding: 72px 80px 64px;
+        background: #f6f3ee;
+        color: #171614;
+        font-family: 'Instrument Sans', sans-serif;
+      }
+      .eyebrow {
+        margin: 0;
+        color: #1e5a47;
+        font-size: 22px;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+      h1 {
+        align-self: center;
+        max-width: 15ch;
+        margin: 0;
+        font-family: 'Newsreader', serif;
+        font-size: 78px;
+        font-weight: 400;
+        line-height: 1.04;
+        letter-spacing: -0.025em;
+      }
+      footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 24px;
+        border-top: 2px solid rgb(23 22 20 / 0.12);
+        color: #47443e;
+        font-size: 24px;
+      }
+      footer span:last-child {
+        color: #1e5a47;
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="eyebrow">Endrit Sylejmani</p>
+    <h1>I build products for the work people do every day.</h1>
+    <footer>
+      <span>Software · Finance · School operations</span>
+      <span>endrits.com</span>
+    </footer>
+  </body>
+</html>
