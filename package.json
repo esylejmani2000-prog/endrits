@@ -8,7 +8,7 @@
     "dev": "npm run images && vite",
     "build": "npm run images && vite build && vite build --ssr src/entry-server.tsx --outDir dist-ssr && node scripts/prerender.mjs",
     "preview": "vite preview",
-    "typecheck": "tsc --noEmit",
+    "typecheck": "npm run images && tsc --noEmit",
     "lint": "oxlint",
     "check": "npm run lint && npm run typecheck && npm run build"
   },
