@@ -1,6 +1,7 @@
 import { ArrowRight } from 'lucide-react'
 import { getMedia } from '../media'
 import type { Project } from '../types'
+import { Highlights } from './Highlights'
 import { Picture } from './Picture'
 
 export function ProjectCover({ project }: { project: Project }) {
@@ -41,6 +42,7 @@ export function ProjectCard({ project, headingLevel = 3 }: { project: Project; h
           </a>
         </Heading>
         <p>{project.summary}</p>
+        <Highlights items={project.highlights} />
         <dl className="card-meta">
           <div>
             <dt>Role</dt>

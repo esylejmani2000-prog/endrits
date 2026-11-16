@@ -1,5 +1,6 @@
 import { ArrowRight } from 'lucide-react'
 import { about } from '../../content/about'
+import { site } from '../../content/site'
 import { Picture, ViewerFigure } from '../components/Picture'
 import { getMedia } from '../media'
 
@@ -18,6 +19,13 @@ export function About() {
             {about.bio.map((p) => (
               <p key={p}>{p}</p>
             ))}
+            {site.resume ? (
+              <p>
+                <a className="arrow-link" href={site.resume}>
+                  Download my résumé (PDF) <ArrowRight aria-hidden="true" />
+                </a>
+              </p>
+            ) : null}
           </div>
           {candid ? (
             <figure className="photo">

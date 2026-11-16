@@ -55,6 +55,8 @@ export interface Project {
   cover?: MediaId
   /** Short label shown on cards, e.g. "School finance · Product". */
   kicker: string
+  /** Up to three headline figures shown on the card and under the case-study title. */
+  highlights?: { value: string; label: string }[]
   sections: CaseStudySection[]
   /** Kept with unpublished drafts so the gap is explicit. */
   missing?: string[]

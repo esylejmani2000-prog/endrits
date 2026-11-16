@@ -13,6 +13,11 @@ export function Footer() {
               <a href={item.href}>{item.label}</a>
             </li>
           ))}
+          {site.resume ? (
+            <li>
+              <a href={site.resume}>Résumé (PDF)</a>
+            </li>
+          ) : null}
           <li>
             <a href={site.linkedin} rel="me noopener" target="_blank">
               LinkedIn<span className="visually-hidden"> (opens in a new tab)</span>

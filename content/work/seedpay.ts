@@ -11,9 +11,14 @@ export const seedpay: Project = {
   summary:
     'A school finance product that brings tuition and fees, financial aid and donations into one place for school staff and families.',
   kicker: 'School finance · Founder',
+  highlights: [
+    { value: '3', label: 'modules: aid, fees and giving' },
+    { value: '15+', label: 'school administrators in discovery' },
+    { value: '2027', label: 'first launch' },
+  ],
   role: 'Founder. I define the product and its workflows and build the prototype.',
-  status: 'In development. The current prototype runs on fictional data.',
-  timeframe: '2025 – present',
+  status: 'In development. First launch planned for 2027; no pilots before then.',
+  timeframe: '2024 – present',
   context: 'Grew out of my work on finance operations at a new K–12 school.',
   cover: 'seedpay-homepage',
   sections: [
@@ -22,6 +27,7 @@ export const seedpay: Project = {
       body: [
         'A private school’s tuition rarely comes from one place. A single family’s bill can combine private payments, a school financial-aid award, and state education savings account funds such as Texas’s TEFA program. Donations add another stream on top.',
         'At the school where I work, each source was tracked by hand. Late payments slipped through, and reconciling what had arrived against what was owed took days of staff time each month.',
+        'Discovery conversations with more than 15 school administrators pointed to the same pattern in other schools.',
       ],
     },
     {
@@ -40,8 +46,8 @@ export const seedpay: Project = {
           text: 'I couldn’t assume an API existed, so the product has to work from school-verified records first.',
         },
         {
-          title: 'No real school data until release checks pass.',
-          text: 'Everything so far has been built and tested with fictional schools and families.',
+          title: 'No real school data before launch.',
+          text: 'Everything so far has been designed and tested with fictional schools and families.',
         },
       ],
     },
@@ -100,9 +106,9 @@ export const seedpay: Project = {
     {
       heading: 'Where it stands',
       points: [
-        { text: 'A working prototype of billing, financial aid and giving, with unit and integration tests for the money rules.' },
-        { text: 'It runs on fictional data. The planned next step is a controlled financial-aid pilot with one school, once release checks pass.' },
-        { text: 'Fee collection follows aid. Donations are planned after that.' },
+        { text: 'SeedPay is still being built. The prototype covers billing, financial aid and giving, with unit and integration tests for the money rules, and runs only on fictional data.' },
+        { text: 'The first launch is planned for 2027. There are no pilots or school customers before then.' },
+        { text: 'Financial aid comes first, then fee collection, then donations.' },
       ],
     },
   ],

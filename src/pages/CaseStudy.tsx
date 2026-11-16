@@ -1,5 +1,6 @@
 import { ArrowLeft, ArrowRight } from 'lucide-react'
 import { publishedProjects } from '../../content/work'
+import { Highlights } from '../components/Highlights'
 import { ViewerFigure } from '../components/Picture'
 import { getMedia } from '../media'
 import type { CaseStudySection, Project } from '../types'
@@ -97,6 +98,7 @@ export function CaseStudy({ project }: { project: Project }) {
         <p className="eyebrow">{project.kicker}</p>
         <h1>{project.title}</h1>
         <p className="lede">{project.summary}</p>
+        <Highlights items={project.highlights} />
         <dl className="cs-meta">
           <div>
             <dt>Role</dt>

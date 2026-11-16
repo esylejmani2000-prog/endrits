@@ -336,6 +336,10 @@ button {
   background: var(--midnight) url('/favicon.svg') center / cover no-repeat;
 }
 
+.nav-bar > nav {
+  margin-left: auto;
+}
+
 .nav-links {
   display: flex;
   align-items: center;
@@ -375,6 +379,32 @@ button {
   border-radius: inherit;
   background: var(--ink);
   view-transition-name: nav-current;
+}
+
+.nav-resume {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  min-height: 44px;
+  padding-inline: var(--space-4);
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius-pill);
+  color: var(--ink);
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background-color var(--dur) var(--ease), border-color var(--dur) var(--ease);
+}
+
+.nav-resume:hover {
+  border-color: var(--ink);
+  background: var(--paper-raised);
+}
+
+.nav-resume svg {
+  width: 16px;
+  height: 16px;
 }
 
 .menu-button {
@@ -425,7 +455,8 @@ button {
     flex-wrap: wrap;
   }
 
-  html.js .nav-bar > nav {
+  html.js .nav-bar > nav,
+  html.js .nav-resume {
     display: none;
   }
 
@@ -479,6 +510,15 @@ button {
 
   .menu-panel a:hover {
     background: rgb(23 22 20 / 0.06);
+  }
+
+  .menu-panel a.menu-secondary {
+    margin-top: var(--space-2);
+    border-top: 1px solid var(--line);
+    border-radius: 0 0 var(--radius-2) var(--radius-2);
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    font-weight: 600;
   }
 
   .menu-panel a[aria-current] {
@@ -714,6 +754,7 @@ main {
 
 .hero-text {
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   gap: var(--space-5);
 }
 
@@ -933,6 +974,44 @@ main {
 
 .card:hover .card-cta svg {
   translate: 3px 0;
+}
+
+/* Headline figures on cards and case studies */
+.highlights {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 8.5rem), 1fr));
+  gap: var(--space-3);
+  padding: 0;
+  list-style: none;
+}
+
+.highlights li {
+  display: grid;
+  align-content: start;
+  gap: 2px;
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-2);
+  background: var(--pine-soft);
+}
+
+.highlights strong {
+  color: var(--pine-strong);
+  font-family: var(--font-serif);
+  font-size: var(--step-1);
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.2;
+}
+
+.highlights span {
+  color: var(--ink-2);
+  font-size: var(--step--1);
+  line-height: 1.35;
+}
+
+.cs-head .highlights {
+  max-width: 48rem;
+  margin-top: var(--space-2);
 }
 
 /* Text cover for projects without a public screenshot */
@@ -1184,6 +1263,7 @@ html:not(.js) .needs-js {
 
 .cs-head {
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   gap: var(--space-4);
 }
 

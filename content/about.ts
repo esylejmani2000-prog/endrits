@@ -1,40 +1,40 @@
 import type { TimelineEntry } from '../src/types'
 
 export const about = {
-  intro: 'I’m a product builder. Most of my career has been spent inside the operations that software is supposed to help.',
+  intro: 'I’m a product builder based in Houston, Texas. Most of my career has been spent inside the operations that software is supposed to help.',
   bio: [
     'I grew up in Kosovo and studied computer science (AI) and business at Minerva University, which meant living and working in several countries along the way, with internships in Berlin, Seoul and Abu Dhabi.',
-    'Since 2023 I’ve been the founding business manager at a new private K–12 school in Houston. Much of that job has been building the school’s operational workflows on Google Workspace: finance, HR, admissions and academic oversight.',
-    'Before that I spent four years at Minerva Project coordinating student payroll and finance operations, worked on an AI-assisted math learning app with the Masason Foundation in Tokyo, and was a research mentee in Google’s Computer Science Research Mentorship Program.',
-    'Now I’m building SeedPay, a school finance product for tuition, financial aid and donations.',
+    'Since 2023 I’ve been Director of Innovation & Business Operations at a new private K–12 school in Houston. I built its operating systems from zero: finance, HR, procurement, admissions, financial aid and tuition collection, mostly on Google Workspace. Over three years the school’s revenue grew from $650K to $1.9 million and enrollment grew 80% in two years.',
+    'Before that I led payroll automation at Minerva University, co-founded an AI math learning platform in the SoftBank Masason Foundation AI Lab, and was a research mentee in Google’s Computer Science Research Mentorship Program.',
+    'Now I’m building SeedPay, a school finance product for tuition, financial aid and donations. The first launch is planned for 2027.',
   ],
   timeline: [
     {
-      period: '2025 – now',
+      period: '2024 – now',
       title: 'Founder',
       org: 'SeedPay',
-      text: 'A school finance product for tuition, financial aid and donations. In development.',
+      text: 'A school finance product for tuition, financial aid and donations. In development; first launch planned for 2027.',
     },
     {
       period: '2023 – now',
-      title: 'Founding Business Manager · Business Analyst',
+      title: 'Director of Innovation & Business Operations',
       org: 'Horizon Leadership Academy',
       place: 'Houston, Texas',
-      text: 'Operations, finance and internal systems for a new private K–12 school.',
+      text: 'Built the operational infrastructure of a new private K–12 school. 12+ automation workflows cut manual processing by about 70%.',
     },
     {
       period: '2022 – 2023',
-      title: 'Co-founder, math learning app',
-      org: 'Masason Foundation and Deepcore',
-      place: 'Tokyo',
-      text: 'Product discovery, user interviews and weekly sprints for an AI-assisted math app.',
+      title: 'Co-founder & Product Lead, AI math learning platform',
+      org: 'SoftBank Masason Foundation AI Lab',
+      place: 'San Francisco',
+      text: 'Led 0-to-1 development with 5 engineers and 2 researchers, grounded in 50+ user interviews.',
     },
     {
       period: '2019 – 2023',
-      title: 'Lead Finance Coordinator',
-      org: 'Minerva Project',
+      title: 'Lead Payroll & Automation Coordinator',
+      org: 'Minerva University',
       place: 'San Francisco',
-      text: 'Student payroll and finance operations; automated reporting with Google Apps Script.',
+      text: 'Automated payroll and compliance workflows for 500+ employees with Google Apps Script.',
     },
     {
       period: '2021',

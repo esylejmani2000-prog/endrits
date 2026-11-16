@@ -1,4 +1,4 @@
-import { ArrowUpRight, Copy } from 'lucide-react'
+import { ArrowUpRight, Copy, FileText } from 'lucide-react'
 import { contact, site } from '../../content/site'
 
 export function ContactActions() {
@@ -15,6 +15,11 @@ export function ContactActions() {
           LinkedIn <ArrowUpRight aria-hidden="true" />
           <span className="visually-hidden"> (opens in a new tab)</span>
         </a>
+        {site.resume ? (
+          <a className="btn btn-secondary" href={site.resume}>
+            <FileText aria-hidden="true" /> Résumé<span className="visually-hidden"> (PDF)</span>
+          </a>
+        ) : null}
       </div>
       <p className="copy-status" role="status" aria-live="polite" data-copy-status></p>
     </>

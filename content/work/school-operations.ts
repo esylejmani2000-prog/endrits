@@ -1,9 +1,8 @@
 import type { Project } from '../../src/types'
 
-// Source: Operational Systems Portfolio (May 2026). Only public-safe, process-level
-// details are used: no student or family data, internal dashboards, financial
-// records or school documents. Self-reported percentages are left out until they
-// can be backed by a measured baseline.
+// Sources: Operational Systems Portfolio (May 2026) and the current résumé. Only
+// public-safe, process-level details are used: no student or family data, internal
+// dashboards, financial records or school documents. Figures confirmed by Endrit.
 
 export const schoolOperations: Project = {
   slug: 'school-operations',
@@ -12,7 +11,12 @@ export const schoolOperations: Project = {
   summary:
     'Connected workflows for purchasing, reimbursements, HR requests, admissions and classroom observations that replaced paper forms and email threads at a new private K–12 school.',
   kicker: 'School operations · Systems',
-  role: 'Founding Business Manager, Horizon Leadership Academy. I designed and built the systems and trained staff to use them.',
+  highlights: [
+    { value: '~70%', label: 'less manual processing' },
+    { value: '+80%', label: 'enrollment in two years' },
+    { value: '$650K → $1.9M', label: 'revenue over three years' },
+  ],
+  role: 'Director of Innovation & Business Operations, Horizon Leadership Academy. I designed and built the systems and trained staff to use them.',
   status: 'In use at the school.',
   timeframe: '2023 – present',
   context: 'A newly founded private K–12 school in Houston. Built on Google Workspace with Apps Script.',
@@ -92,8 +96,10 @@ export const schoolOperations: Project = {
     {
       heading: 'Outcomes',
       points: [
+        { text: 'Across 12+ automated workflows, manual processing time fell by about 70%.' },
         { text: 'Every purchase, reimbursement and time-off request now has a record and an approval history.' },
-        { text: 'Accreditation evidence is collected as the year goes, not rebuilt at the deadline. The school earned Cognia accreditation in its first operational year.' },
+        { text: 'The systems had to keep up with a fast-growing school: enrollment grew 80% in two years, and revenue grew from $650K to $1.9 million over three years.' },
+        { text: 'Accreditation evidence is collected as the year goes, not rebuilt at the deadline. The school earned three accreditations: Cognia, in its first operational year, and State and National Schools of Character.' },
         { text: 'No new licence costs: everything runs on the school’s existing Google Workspace.' },
         { text: 'The finance workflows showed how hard multi-source tuition is to manage by hand. That is where SeedPay started.' },
       ],

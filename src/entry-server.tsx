@@ -102,6 +102,7 @@ function renderHead(route: Route) {
       name: site.name,
       url: site.url,
       email: `mailto:${site.email}`,
+      address: { '@type': 'PostalAddress', addressLocality: 'Houston', addressRegion: 'TX', addressCountry: 'US' },
       sameAs: [site.linkedin],
     }
     tags.push(`<script type="application/ld+json">${JSON.stringify(person)}</script>`)

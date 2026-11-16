@@ -1,6 +1,6 @@
 import { ArrowDown, ArrowRight } from 'lucide-react'
 import { about } from '../../content/about'
-import { home } from '../../content/site'
+import { home, site } from '../../content/site'
 import { publishedProjects } from '../../content/work'
 import { ContactBand } from '../components/ContactBlock'
 import { Picture } from '../components/Picture'
@@ -94,6 +94,10 @@ export function Home() {
               </figure>
             ) : (
               <dl className="facts">
+                <div>
+                  <dt>Based</dt>
+                  <dd>{site.location}</dd>
+                </div>
                 <div>
                   <dt>Studied</dt>
                   <dd>Computer science (AI) and business, Minerva University</dd>

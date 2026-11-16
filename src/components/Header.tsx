@@ -1,4 +1,4 @@
-import { Menu, X } from 'lucide-react'
+import { FileText, Menu, X } from 'lucide-react'
 import { nav, site } from '../../content/site'
 
 function isCurrent(href: string, path: string) {
@@ -26,6 +26,11 @@ export function Header({ path }: { path: string }) {
             ))}
           </ul>
         </nav>
+        {site.resume ? (
+          <a className="nav-resume" href={site.resume}>
+            <FileText aria-hidden="true" /> Résumé<span className="visually-hidden"> (PDF)</span>
+          </a>
+        ) : null}
         <button
           type="button"
           className="menu-button"
@@ -47,6 +52,13 @@ export function Header({ path }: { path: string }) {
               </a>
             </li>
           ))}
+          {site.resume ? (
+            <li>
+              <a href={site.resume} className="menu-secondary">
+                Résumé <span className="muted">PDF</span>
+              </a>
+            </li>
+          ) : null}
         </ul>
       </nav>
     </header>
