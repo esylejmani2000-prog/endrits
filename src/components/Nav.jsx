@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Menu, X } from 'lucide-react'
 import { profile } from '../data'
+import Wordmark from './Wordmark'
 
 const LINKS = [
   { href: '#about', label: 'About' },
@@ -24,19 +25,21 @@ export default function Nav() {
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
         scrolled
-          ? 'border-b border-white/10 bg-[#05050b]/80 backdrop-blur-xl'
+          ? 'border-b border-cream/10 bg-ink/80 backdrop-blur-xl'
           : 'border-b border-transparent bg-transparent'
       }`}
     >
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         <a
           href="#top"
-          className="flex items-center gap-2 font-display text-lg font-semibold tracking-tight text-white"
+          className="flex items-center gap-3 font-display text-xl text-cream"
         >
-          <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-[#863bff] to-[#47bfff] text-sm font-bold text-white shadow-lg shadow-[#7e14ff]/30">
-            {profile.initials}
-          </span>
-          <span className="hidden sm:inline">{profile.name}</span>
+          <img
+            src="/favicon.svg"
+            alt=""
+            className="h-9 w-9 rounded-[10px] ring-1 ring-gold/30"
+          />
+          <Wordmark className="hidden sm:inline" />
         </a>
 
         <div className="hidden items-center gap-8 md:flex">
@@ -44,14 +47,14 @@ export default function Nav() {
             <a
               key={link.href}
               href={link.href}
-              className="text-sm text-white/70 transition-colors hover:text-white"
+              className="text-sm text-cream/70 transition-colors hover:text-cream"
             >
               {link.label}
             </a>
           ))}
           <a
             href={`mailto:${profile.email}`}
-            className="rounded-full bg-white px-4 py-2 text-sm font-medium text-[#05050b] transition-transform hover:scale-105"
+            className="rounded-full bg-gold px-4 py-2 text-sm font-medium text-ink transition-transform hover:scale-105"
           >
             Say Hello
           </a>
@@ -60,7 +63,7 @@ export default function Nav() {
         <button
           type="button"
           onClick={() => setOpen((v) => !v)}
-          className="text-white md:hidden"
+          className="text-cream md:hidden"
           aria-label="Toggle menu"
         >
           {open ? <X size={22} /> : <Menu size={22} />}
@@ -68,14 +71,14 @@ export default function Nav() {
       </nav>
 
       {open && (
-        <div className="border-t border-white/10 bg-[#05050b]/95 px-6 py-4 backdrop-blur-xl md:hidden">
+        <div className="border-t border-cream/10 bg-ink/95 px-6 py-4 backdrop-blur-xl md:hidden">
           <div className="flex flex-col gap-4">
             {LINKS.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
                 onClick={() => setOpen(false)}
-                className="text-sm text-white/70 hover:text-white"
+                className="text-sm text-cream/70 hover:text-cream"
               >
                 {link.label}
               </a>
@@ -83,7 +86,7 @@ export default function Nav() {
             <a
               href={`mailto:${profile.email}`}
               onClick={() => setOpen(false)}
-              className="w-fit rounded-full bg-white px-4 py-2 text-sm font-medium text-[#05050b]"
+              className="w-fit rounded-full bg-gold px-4 py-2 text-sm font-medium text-ink"
             >
               Say Hello
             </a>

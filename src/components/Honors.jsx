@@ -16,15 +16,15 @@ export default function Honors() {
         <div className="mt-16 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {honors.map((honor, i) => (
             <Reveal key={honor.title} delay={i * 80}>
-              <div className="group h-full rounded-2xl border border-white/10 bg-white/[0.03] p-6 backdrop-blur transition-colors hover:border-[#47bfff]/50 hover:bg-white/[0.06]">
+              <div className="group h-full rounded-2xl border border-cream/10 bg-cream/[0.03] p-6 backdrop-blur transition-colors hover:border-gold-soft/50 hover:bg-cream/[0.06]">
                 <Award
                   size={22}
-                  className="text-[#47bfff] transition-transform group-hover:scale-110"
+                  className="text-gold-soft transition-transform group-hover:scale-110"
                 />
-                <h3 className="mt-4 font-display text-base font-semibold text-white">
+                <h3 className="mt-4 font-display text-base font-semibold text-cream">
                   {honor.title}
                 </h3>
-                <p className="mt-2 text-sm leading-relaxed text-white/60">
+                <p className="mt-2 text-sm leading-relaxed text-cream/60">
                   {honor.body}
                 </p>
               </div>

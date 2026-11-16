@@ -20,14 +20,14 @@ export default function About() {
             const Icon = ICONS[i % ICONS.length]
             return (
               <Reveal key={pillar.title} delay={i * 100}>
-                <div className="group h-full rounded-2xl border border-white/10 bg-white/[0.03] p-6 backdrop-blur transition-colors hover:border-[#863bff]/50 hover:bg-white/[0.06]">
-                  <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-to-br from-[#863bff]/20 to-[#47bfff]/20 text-[#a679ff] transition-transform group-hover:scale-110">
+                <div className="group h-full rounded-2xl border border-cream/10 bg-cream/[0.03] p-6 backdrop-blur transition-colors hover:border-gold/50 hover:bg-cream/[0.06]">
+                  <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-gold/10 ring-1 ring-gold/25 text-gold transition-transform group-hover:scale-110">
                     <Icon size={20} />
                   </div>
-                  <h3 className="mt-4 font-display text-lg font-semibold text-white">
+                  <h3 className="mt-4 font-display text-lg font-semibold text-cream">
                     {pillar.title}
                   </h3>
-                  <p className="mt-2 text-sm leading-relaxed text-white/60">
+                  <p className="mt-2 text-sm leading-relaxed text-cream/60">
                     {pillar.body}
                   </p>
                 </div>

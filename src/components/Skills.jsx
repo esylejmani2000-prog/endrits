@@ -14,46 +14,46 @@ export default function Skills() {
 
         <div className="mt-16 grid gap-6 lg:grid-cols-2">
           <Reveal>
-            <div className="h-full rounded-2xl border border-white/10 bg-white/[0.03] p-8 backdrop-blur">
-              <h3 className="font-display text-lg font-semibold text-white">
+            <div className="h-full rounded-2xl border border-cream/10 bg-cream/[0.03] p-8 backdrop-blur">
+              <h3 className="font-display text-lg font-semibold text-cream">
                 Top Skills
               </h3>
               <div className="mt-4 flex flex-wrap gap-2">
                 {skills.top.map((skill) => (
                   <span
                     key={skill}
-                    className="rounded-full bg-gradient-to-r from-[#863bff]/20 to-[#47bfff]/20 px-4 py-1.5 text-sm font-medium text-white"
+                    className="rounded-full bg-gold/10 px-4 py-1.5 text-sm font-medium text-gold-soft ring-1 ring-gold/30"
                   >
                     {skill}
                   </span>
                 ))}
               </div>
 
-              <h3 className="mt-8 font-display text-lg font-semibold text-white">
+              <h3 className="mt-8 font-display text-lg font-semibold text-cream">
                 Technical Toolkit
               </h3>
               <div className="mt-4 flex flex-wrap gap-2">
                 {skills.toolkit.map((skill) => (
                   <span
                     key={skill}
-                    className="rounded-full border border-white/15 px-4 py-1.5 text-sm text-white/70"
+                    className="rounded-full border border-cream/15 px-4 py-1.5 text-sm text-cream/70"
                   >
                     {skill}
                   </span>
                 ))}
               </div>
 
-              <h3 className="mt-8 flex items-center gap-2 font-display text-lg font-semibold text-white">
-                <BadgeCheck size={18} className="text-[#a679ff]" />
+              <h3 className="mt-8 flex items-center gap-2 font-display text-lg font-semibold text-cream">
+                <BadgeCheck size={18} className="text-gold" />
                 Certifications
               </h3>
               <ul className="mt-4 space-y-2">
                 {certifications.map((cert) => (
                   <li
                     key={cert}
-                    className="flex gap-2 text-sm text-white/60"
+                    className="flex gap-2 text-sm text-cream/60"
                   >
-                    <span className="mt-2 h-1 w-1 shrink-0 rounded-full bg-[#47bfff]" />
+                    <span className="mt-2 h-1 w-1 shrink-0 rounded-full bg-gold-soft" />
                     {cert}
                   </li>
                 ))}
@@ -62,23 +62,23 @@ export default function Skills() {
           </Reveal>
 
           <Reveal delay={120}>
-            <div className="h-full rounded-2xl border border-white/10 bg-white/[0.03] p-8 backdrop-blur">
-              <h3 className="flex items-center gap-2 font-display text-lg font-semibold text-white">
-                <LanguagesIcon size={18} className="text-[#a679ff]" />
+            <div className="h-full rounded-2xl border border-cream/10 bg-cream/[0.03] p-8 backdrop-blur">
+              <h3 className="flex items-center gap-2 font-display text-lg font-semibold text-cream">
+                <LanguagesIcon size={18} className="text-gold" />
                 Languages
               </h3>
               <div className="mt-6 space-y-5">
                 {skills.languages.map((lang) => (
                   <div key={lang.name}>
                     <div className="flex items-center justify-between text-sm">
-                      <span className="font-medium text-white">
+                      <span className="font-medium text-cream">
                         {lang.name}
                       </span>
-                      <span className="text-white/40">{lang.level}</span>
+                      <span className="text-cream/40">{lang.level}</span>
                     </div>
-                    <div className="mt-2 h-1.5 w-full overflow-hidden rounded-full bg-white/10">
+                    <div className="mt-2 h-1.5 w-full overflow-hidden rounded-full bg-cream/10">
                       <div
-                        className="h-full rounded-full bg-gradient-to-r from-[#863bff] to-[#47bfff]"
+                        className="h-full rounded-full bg-gradient-to-r from-gold to-gold-soft"
                         style={{ width: `${lang.value}%` }}
                       />
                     </div>

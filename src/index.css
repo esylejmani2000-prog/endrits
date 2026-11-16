@@ -1,9 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap');
 @import "tailwindcss";
 
 @theme {
-  --font-display: 'Space Grotesk', 'Inter', sans-serif;
+  --font-display: 'Playfair Display', Georgia, serif;
   --font-sans: 'Inter', system-ui, sans-serif;
+
+  --color-ink: #0f1b2d;
+  --color-ink-deep: #0a1322;
+  --color-gold: #d4af63;
+  --color-gold-soft: #e6cd96;
+  --color-cream: #f3eee4;
 }
 
 html {
@@ -12,13 +18,14 @@ html {
 
 body {
   margin: 0;
-  background-color: #05050b;
+  background-color: var(--color-ink);
+  color: var(--color-cream);
   font-family: var(--font-sans);
 }
 
 ::selection {
-  background-color: #863bff;
-  color: #ffffff;
+  background-color: var(--color-gold);
+  color: var(--color-ink);
 }
 
 @keyframes blob {
@@ -35,5 +42,5 @@ body {
 }
 
 .animate-blob {
-  animation: blob 16s ease-in-out infinite;
+  animation: blob 18s ease-in-out infinite;
 }

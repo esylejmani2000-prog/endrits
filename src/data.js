@@ -1,6 +1,5 @@
 export const profile = {
   name: 'Endrit Sylejmani',
-  initials: 'ES',
   roles: [
     'Product Manager',
     'AI Systems Architect',
